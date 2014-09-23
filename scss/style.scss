@@ -173,6 +173,17 @@ nav a:hover {
 .footer-container footer {
     color: white;
     padding: 20px 0;
+    span {
+    	display: block;
+    }
+    .footerSocial {
+    	position: relative;
+    	top: -8em;
+    	right: -65%;
+    	img {
+    		margin-right: 2em;
+    	}
+    }
 }
 
 /* ===============
@@ -254,6 +265,26 @@ a, a:visited, a:hover {
 	}
 }
 
+.desc {
+	font-family: "Helvetica Thin";
+	.listProj {
+		width: 84%;
+	}
+	.proj {
+		background-color: $color;
+		width: 24%;
+		padding: 6%;
+		height: 15em;
+		margin: 2%;
+		float: right;
+		transition: background 1500ms ease;
+	}
+	.proj:hover {
+		background-color: lighten($color, 50%);
+		transition: background 250ms ease;
+	}
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -291,6 +322,9 @@ a, a:visited, a:hover {
         margin: 0 0.7%;
     }
 
+	/*.main aside {
+		margin-bottom: 4em;
+	}*/
 
     .main article {
         //float: left;
