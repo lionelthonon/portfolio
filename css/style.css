@@ -962,20 +962,18 @@ body {
 /* line 114, ../scss/style.scss */
 .title {
   color: white;
-  display: inline;
-  margin: auto;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
-/* line 124, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 129, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 nav a {
   display: block;
   margin-bottom: 10px;
@@ -988,13 +986,13 @@ nav a {
   transition: background 500ms ease;
 }
 
-/* line 144, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 nav a:hover,
 nav a:visited {
   color: white;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 nav a:hover {
   text-decoration: none;
   background: #02b6a7;
@@ -1004,23 +1002,23 @@ nav a:hover {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 160, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .main {
   padding: 30px 0;
 }
 
-/* line 164, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .main article h1 {
   font-size: 2em;
 }
 
-/* line 168, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 .main aside {
   color: white;
   padding: 3%;
 }
 
-/* line 173, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .footer-container footer {
   color: white;
   padding: 20px 0;
@@ -1029,7 +1027,7 @@ nav a:hover {
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 182, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -1037,37 +1035,31 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 189, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .helvTh {
   font-family: "Helvetica Thin";
 }
 
-/* line 193, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 .helvL {
   font-family: "Helvetica Light";
 }
 
-/* line 197, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 a, a:visited, a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 202, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
 .fixed {
   width: 100%;
   position: fixed;
 }
 
-/* line 207, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 .main-container {
   padding-top: 4em;
-}
-
-/*.background {
-	background-image: url('../img/background.jpg');
-	width: 100%;
-	position: fixed;
 }
 
 /* ==========================================================================
@@ -1077,7 +1069,7 @@ a, a:visited, a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 227, ../scss/style.scss */
+  /* line 219, ../scss/style.scss */
   nav a {
     float: left;
     width: 27%;
@@ -1085,12 +1077,12 @@ a, a:visited, a:hover {
     margin-bottom: 0;
   }
 
-  /* line 234, ../scss/style.scss */
+  /* line 226, ../scss/style.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 238, ../scss/style.scss */
+  /* line 230, ../scss/style.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -1098,25 +1090,38 @@ a, a:visited, a:hover {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 246, ../scss/style.scss */
+  /* line 238, ../scss/style.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 250, ../scss/style.scss */
+  /* line 242, ../scss/style.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 255, ../scss/style.scss */
-  s
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  /* line 253, ../scss/style.scss */
+  .header-container,
+  .main aside {
+    /*  -webkit-box-shadow: 0 5px 10px #aaa;
+         -moz-box-shadow: 0 5px 10px #aaa;
+              box-shadow: 0 5px 10px #aaa;*/
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  /* line 264, ../scss/style.scss */
   .title {
     float: left;
     margin: 0.4em 0;
   }
 
-  /* line 266, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   nav {
     float: right;
     width: 46%;
@@ -1125,24 +1130,24 @@ a, a:visited, a:hover {
   /* ============
       WIDE: Main
      ============ */
-  /* line 275, ../scss/style.scss */
+  /* line 278, ../scss/style.scss */
   .main article {
     float: left;
     width: 52%;
   }
 
-  /* line 280, ../scss/style.scss */
+  /* line 283, ../scss/style.scss */
   .main aside {
     float: right;
     width: 36%;
   }
-  /* line 283, ../scss/style.scss */
+  /* line 286, ../scss/style.scss */
   .main aside .img-box {
     width: 100%;
     border-radius: 2em;
     overflow: hidden;
   }
-  /* line 287, ../scss/style.scss */
+  /* line 290, ../scss/style.scss */
   .main aside .img-box img {
     width: 100%;
   }
@@ -1151,7 +1156,7 @@ a, a:visited, a:hover {
   /* ===============
       Maximal Width
      =============== */
-  /* line 300, ../scss/style.scss */
+  /* line 303, ../scss/style.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -1161,7 +1166,7 @@ a, a:visited, a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 310, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1169,7 +1174,7 @@ a, a:visited, a:hover {
   *text-indent: -9999px;
 }
 
-/* line 317, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1177,13 +1182,13 @@ a, a:visited, a:hover {
   height: 150%;
 }
 
-/* line 324, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 329, ../scss/style.scss */
+/* line 332, ../scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1195,7 +1200,7 @@ a, a:visited, a:hover {
   width: 1px;
 }
 
-/* line 340, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1206,24 +1211,24 @@ a, a:visited, a:hover {
   width: auto;
 }
 
-/* line 350, ../scss/style.scss */
+/* line 353, ../scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 354, ../scss/style.scss */
+/* line 357, ../scss/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 360, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1232,7 +1237,7 @@ a, a:visited, a:hover {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 373, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1240,48 +1245,48 @@ a, a:visited, a:hover {
     text-shadow: none !important;
   }
 
-  /* line 380, ../scss/style.scss */
+  /* line 383, ../scss/style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 385, ../scss/style.scss */
+  /* line 388, ../scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 389, ../scss/style.scss */
+  /* line 392, ../scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 393, ../scss/style.scss */
+  /* line 396, ../scss/style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 399, ../scss/style.scss */
+  /* line 402, ../scss/style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 405, ../scss/style.scss */
+  /* line 408, ../scss/style.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 409, ../scss/style.scss */
+  /* line 412, ../scss/style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 414, ../scss/style.scss */
+  /* line 417, ../scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -1289,7 +1294,7 @@ a, a:visited, a:hover {
   @page {
     margin: 0.5cm;
   }
-  /* line 422, ../scss/style.scss */
+  /* line 425, ../scss/style.scss */
   p,
   h2,
   h3 {
@@ -1297,7 +1302,7 @@ a, a:visited, a:hover {
     widows: 3;
   }
 
-  /* line 429, ../scss/style.scss */
+  /* line 432, ../scss/style.scss */
   h2,
   h3 {
     page-break-after: avoid;

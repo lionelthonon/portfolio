@@ -113,8 +113,6 @@ body {
 
 .title {
     color: white;
-    display: inline;
-    margin: auto;
 }
 
 /* ==============
@@ -208,12 +206,6 @@ a, a:visited, a:hover {
 	padding-top: 4em;
 }
 
-/*.background {
-	background-image: url('../img/background.jpg');
-	width: 100%;
-	position: fixed;
-}
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -252,7 +244,18 @@ a, a:visited, a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {s
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+      /*  -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;*/
+    }
 
 /* ============
     WIDE: Menu
