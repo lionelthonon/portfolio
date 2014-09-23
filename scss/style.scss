@@ -210,7 +210,7 @@ a, a:visited, a:hover {
 
 .header-background {
 	background: url('../img/background.jpg');
-	background-position: 50% 50%;
+	background-position: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -346,8 +346,10 @@ a, a:visited, a:hover {
     }
 
     .main aside {
+    	margin-bottom: 4em;
         float: right;
         width: 36%;
+        z-index: -1;
         .img-box {
         	width: 100%;
         	border-radius: 2em;

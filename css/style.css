@@ -1067,7 +1067,7 @@ a, a:visited, a:hover {
 /* line 211, ../scss/style.scss */
 .header-background {
   background: url("../img/background.jpg");
-  background-position: 50% 50%;
+  background-position: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1197,16 +1197,18 @@ a, a:visited, a:hover {
 
   /* line 348, ../scss/style.scss */
   .main aside {
+    margin-bottom: 4em;
     float: right;
     width: 36%;
+    z-index: -1;
   }
-  /* line 351, ../scss/style.scss */
+  /* line 353, ../scss/style.scss */
   .main aside .img-box {
     width: 100%;
     border-radius: 2em;
     overflow: hidden;
   }
-  /* line 355, ../scss/style.scss */
+  /* line 357, ../scss/style.scss */
   .main aside .img-box img {
     width: 100%;
   }
@@ -1215,7 +1217,7 @@ a, a:visited, a:hover {
   /* ===============
       Maximal Width
      =============== */
-  /* line 368, ../scss/style.scss */
+  /* line 370, ../scss/style.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -1225,7 +1227,7 @@ a, a:visited, a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 378, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1233,7 +1235,7 @@ a, a:visited, a:hover {
   *text-indent: -9999px;
 }
 
-/* line 385, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1241,13 +1243,13 @@ a, a:visited, a:hover {
   height: 150%;
 }
 
-/* line 392, ../scss/style.scss */
+/* line 394, ../scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 397, ../scss/style.scss */
+/* line 399, ../scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1259,7 +1261,7 @@ a, a:visited, a:hover {
   width: 1px;
 }
 
-/* line 408, ../scss/style.scss */
+/* line 410, ../scss/style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1270,24 +1272,24 @@ a, a:visited, a:hover {
   width: auto;
 }
 
-/* line 418, ../scss/style.scss */
+/* line 420, ../scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 422, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 428, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 432, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1296,7 +1298,7 @@ a, a:visited, a:hover {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 441, ../scss/style.scss */
+  /* line 443, ../scss/style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1304,48 +1306,48 @@ a, a:visited, a:hover {
     text-shadow: none !important;
   }
 
-  /* line 448, ../scss/style.scss */
+  /* line 450, ../scss/style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 453, ../scss/style.scss */
+  /* line 455, ../scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 457, ../scss/style.scss */
+  /* line 459, ../scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 461, ../scss/style.scss */
+  /* line 463, ../scss/style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 467, ../scss/style.scss */
+  /* line 469, ../scss/style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 473, ../scss/style.scss */
+  /* line 475, ../scss/style.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 477, ../scss/style.scss */
+  /* line 479, ../scss/style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 482, ../scss/style.scss */
+  /* line 484, ../scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -1353,7 +1355,7 @@ a, a:visited, a:hover {
   @page {
     margin: 0.5cm;
   }
-  /* line 490, ../scss/style.scss */
+  /* line 492, ../scss/style.scss */
   p,
   h2,
   h3 {
@@ -1361,7 +1363,7 @@ a, a:visited, a:hover {
     widows: 3;
   }
 
-  /* line 497, ../scss/style.scss */
+  /* line 499, ../scss/style.scss */
   h2,
   h3 {
     page-break-after: avoid;
