@@ -963,7 +963,7 @@ body {
 
 /* line 116, ../scss/style.scss */
 .title {
-  color: white;
+  color: #02b6a7;
 }
 
 /* ==============
@@ -1049,7 +1049,7 @@ nav a:hover {
 
 /* line 197, ../scss/style.scss */
 a, a:visited, a:hover {
-  color: white;
+  color: #02b6a7;
   text-decoration: none;
 }
 
@@ -1075,6 +1075,29 @@ a, a:visited, a:hover {
   height: 85%;
   z-index: -1;
 }
+/* line 223, ../scss/style.scss */
+.header-background .home_title {
+  position: absolute;
+  top: 3.75em;
+  left: 12%;
+  font-size: 4em;
+  color: white;
+}
+/* line 232, ../scss/style.scss */
+.header-background .home_title_spec {
+  position: absolute;
+  top: 7em;
+  left: 12%;
+  font-size: 3.1em;
+  font-style: italic;
+  color: white;
+}
+/* line 242, ../scss/style.scss */
+.header-background .backOpacity {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5em;
+  text-align: center;
+}
 
 /* ==========================================================================
    Media Queries
@@ -1083,7 +1106,7 @@ a, a:visited, a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 234, ../scss/style.scss */
+  /* line 259, ../scss/style.scss */
   nav a {
     float: left;
     width: 27%;
@@ -1091,12 +1114,12 @@ a, a:visited, a:hover {
     margin-bottom: 0;
   }
 
-  /* line 241, ../scss/style.scss */
+  /* line 266, ../scss/style.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 245, ../scss/style.scss */
+  /* line 270, ../scss/style.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -1104,21 +1127,36 @@ a, a:visited, a:hover {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 253, ../scss/style.scss */
+  /* line 278, ../scss/style.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 257, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
+
+  /* line 287, ../scss/style.scss */
+  .main article {
+    float: left;
+    width: 52%;
+    background-color: #FFF;
+  }
+
+    /*.main aside {
+       display: none;
+    }
+
+    .header-background {
+    	display: none;
+    }*/
 }
 @media only screen and (min-width: 768px) {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 268, ../scss/style.scss */
+  /* line 310, ../scss/style.scss */
   .header-container,
   .main aside {
     /*  -webkit-box-shadow: 0 5px 10px #aaa;
@@ -1129,13 +1167,13 @@ a, a:visited, a:hover {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 279, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .title {
     float: left;
     margin: 0.4em 0;
   }
 
-  /* line 284, ../scss/style.scss */
+  /* line 326, ../scss/style.scss */
   nav {
     float: right;
     width: 46%;
@@ -1144,24 +1182,25 @@ a, a:visited, a:hover {
   /* ============
       WIDE: Main
      ============ */
-  /* line 293, ../scss/style.scss */
+  /* line 335, ../scss/style.scss */
   .main article {
     float: left;
     width: 52%;
+    background-color: #FFF;
   }
 
-  /* line 298, ../scss/style.scss */
+  /* line 341, ../scss/style.scss */
   .main aside {
     float: right;
     width: 36%;
   }
-  /* line 301, ../scss/style.scss */
+  /* line 344, ../scss/style.scss */
   .main aside .img-box {
     width: 100%;
     border-radius: 2em;
     overflow: hidden;
   }
-  /* line 305, ../scss/style.scss */
+  /* line 348, ../scss/style.scss */
   .main aside .img-box img {
     width: 100%;
   }
@@ -1170,7 +1209,7 @@ a, a:visited, a:hover {
   /* ===============
       Maximal Width
      =============== */
-  /* line 318, ../scss/style.scss */
+  /* line 361, ../scss/style.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -1180,7 +1219,7 @@ a, a:visited, a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 328, ../scss/style.scss */
+/* line 371, ../scss/style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1188,7 +1227,7 @@ a, a:visited, a:hover {
   *text-indent: -9999px;
 }
 
-/* line 335, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1196,13 +1235,13 @@ a, a:visited, a:hover {
   height: 150%;
 }
 
-/* line 342, ../scss/style.scss */
+/* line 385, ../scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 347, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1214,7 +1253,7 @@ a, a:visited, a:hover {
   width: 1px;
 }
 
-/* line 358, ../scss/style.scss */
+/* line 401, ../scss/style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1225,24 +1264,24 @@ a, a:visited, a:hover {
   width: auto;
 }
 
-/* line 368, ../scss/style.scss */
+/* line 411, ../scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 372, ../scss/style.scss */
+/* line 415, ../scss/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 378, ../scss/style.scss */
+/* line 421, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 382, ../scss/style.scss */
+/* line 425, ../scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1251,7 +1290,7 @@ a, a:visited, a:hover {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 391, ../scss/style.scss */
+  /* line 434, ../scss/style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1259,48 +1298,48 @@ a, a:visited, a:hover {
     text-shadow: none !important;
   }
 
-  /* line 398, ../scss/style.scss */
+  /* line 441, ../scss/style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 403, ../scss/style.scss */
+  /* line 446, ../scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 407, ../scss/style.scss */
+  /* line 450, ../scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 411, ../scss/style.scss */
+  /* line 454, ../scss/style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 417, ../scss/style.scss */
+  /* line 460, ../scss/style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 423, ../scss/style.scss */
+  /* line 466, ../scss/style.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 427, ../scss/style.scss */
+  /* line 470, ../scss/style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 432, ../scss/style.scss */
+  /* line 475, ../scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -1308,7 +1347,7 @@ a, a:visited, a:hover {
   @page {
     margin: 0.5cm;
   }
-  /* line 440, ../scss/style.scss */
+  /* line 483, ../scss/style.scss */
   p,
   h2,
   h3 {
@@ -1316,7 +1355,7 @@ a, a:visited, a:hover {
     widows: 3;
   }
 
-  /* line 447, ../scss/style.scss */
+  /* line 490, ../scss/style.scss */
   h2,
   h3 {
     page-break-after: avoid;

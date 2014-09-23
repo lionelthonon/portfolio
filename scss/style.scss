@@ -114,7 +114,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: $color;
 }
 
 /* ==============
@@ -195,7 +195,7 @@ nav a:hover {
 }
 
 a, a:visited, a:hover {
-	color: white;
+	color: $color;
 	text-decoration: none;
 }
 
@@ -219,6 +219,31 @@ a, a:visited, a:hover {
 	height: 85%;
 
 	z-index: -1;
+
+	.home_title {
+		position: absolute;
+		top: 3.75em;
+		left: 12%;
+
+		font-size: 4em;
+		color: white;
+	}
+
+	.home_title_spec {
+		position: absolute;
+		top: 7em;
+		left: 12%;
+
+		font-size: 3.1em;
+		font-style: italic;
+		color: white;
+	}
+
+	.backOpacity {
+		background-color: rgba(255, 255, 255, 0.1);
+		padding: 0.5em;
+		text-align: center;
+	}
 }
 
 /* ==========================================================================
@@ -257,7 +282,24 @@ a, a:visited, a:hover {
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+
+    .main article {
+        float: left;
+        width: 52%;
+        background-color: #FFF;
+    }
+
+    /*.main aside {
+       display: none;
+    }
+
+    .header-background {
+    	display: none;
+    }*/
 }
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -293,6 +335,7 @@ a, a:visited, a:hover {
     .main article {
         float: left;
         width: 52%;
+        background-color: #FFF;
     }
 
     .main aside {
