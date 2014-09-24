@@ -24,51 +24,41 @@
 
         <div class="header-container fixed">
             <header class="wrapper clearfix">
-                <h1 class="title sourcePro"><a href="#">Lionel Thonon</a></h1>
+                <h1 class="title sourcePro"><a href="index.html">Lionel Thonon</a></h1>
                 <nav>
                     <ul class="sourcePro">
                         <li><a href="realisations.html">Réalisations</a></li>
-                        <li><a href="competences.hml">Compétences</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
 
-        <div class="header-background ir">
-            <span class="home_title sourcePro backOpacity">Lionel Thonon</span>
-            <span class="home_title_spec sourcePro ita backOpacity">Web Designer</span>
-        </div>
-
         <div class="main-container clearfix">
             <div class="main wrapper clearfix">
                 <aside>
                     <h3 class="hidden">Lionel Thonon</h3>
-                    <div class="img-box clearfix">
-                        <img src="img/profil.jpg" alt="Photo de Lionel Thonon">
-                    </div>
+                    <form action="#" class="contact">
+                        <fieldset>
+                            <legend>Formulaire de contact</legend>
+
+                            <label for="nom">Votre nom</label>
+                            <input type="text" name="nom" id="nom"placeholder="Ex: Alain Térieur">
+
+                            <label for="email">Votre adresse Email</label>
+                            <input type="email" name="email" id="email" placeholder="Ex: AlainTerieur@exemple.com">
+
+                            <label for="message">Votre message</label>
+                            <input type="textarea" name="message" id="message">
+
+                            <input type="submit" value="Envoyer">
+                        </fieldset>
+                    </form>
                 </aside>
 
-                <article class="desc ir">
-                    <h1>Quelques unes de mes réalisations</h1>
-                    <div class="listProj clearfix">
-                        <div class="proj">
-                            <span>Titre Projet</span>
-                            <p>Description courte du projet</p>
-                        </div>
-                        <div class="proj">
-                            <span>Titre Projet</span>
-                            <p>Description courte du projet</p>
-                        </div>
-                        <div class="proj">
-                            <span>Titre Projet</span>
-                            <p>Description courte du projet</p>
-                        </div>
-                        <div class="proj">
-                            <span>Titre Projet</span>
-                            <p>Description courte du projet</p>
-                        </div>
-                    </div>
+                <article class="desc">
+                <h1>Contactez-moi !</h1>
                 </article>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
